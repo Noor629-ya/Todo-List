@@ -164,7 +164,6 @@ body {
     outline: solid 4px #07A4FD50;
 }
 
-/* 1. زرار الصح (الدايرة) - استقلالية كاملة */
 .check.btn {
     width: 24px;
     height: 24px;
@@ -178,10 +177,9 @@ body {
     padding: 0;
 }
 
-/* بنحدد إن الـ SVG الخاص بالصح فقط هو اللي يتأثر */
 .check.btn svg {
     display: none; 
-    fill: #07A4FD; /* أو اللون الأبيض لو الخلفية زرقاء */
+    fill: #07A4FD; 
 }
 
 .task.true .check.btn {
@@ -193,27 +191,27 @@ body {
     fill: white;
 }
 
-/* 2. زرار السلة - استقلالية كاملة */
+
 .delete.btn {
     background: none;
     border: none;
     cursor: pointer;
-    color: #808080; /* السلة دايماً رمادي */
+    color: #808080; 
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
 }
 
-/* بنحدد إن الـ SVG الخاص بالسلة فقط هو اللي يتأثر */
+
 .delete.btn svg {
-    fill: #808080; /* بنجبر السلة تاخد اللون الرمادي */
+    fill: #808080; 
     width: 20px;
     height: 20px;
 }
 
 .delete.btn:hover svg {
-    fill: red; /* السلة تحمر بس لما نقف عليها */
+    fill: red; 
 }
 
 .task.true .check.btn {
