@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="head">
+            Todo List
+        </h2>
+
+       <div class="create-todo">
+            <input onkeypress="enterKey(event)" type="text" id="inputTodo" placeholder="Add some todo...">
+            <button onclick="addTodo()">
+                 <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+                 fill="currentColor" viewBox="0 0 24 24" >
+                 <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                <path d="M3 13h8v8h2v-8h8v-2h-8V3h-2v8H3z"></path>
+               </svg>
+            </button>
+       </div>
+
+       <div class="task-list">
+       </div>
+
+       <div class="foot">
+        <span>You have <span id="countPendingTasks">0</span> pending tasks</span>
+        <button onclick="clearAll()">Clear All</button>
+       </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
